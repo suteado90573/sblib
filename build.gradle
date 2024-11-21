@@ -17,19 +17,24 @@ group = 'com.sb'
 // バージョンを設定する
 version = '0.0.1-SNAPSHOT'
 
+// Javaの設定(使用するバージョンの指定)
 java {
 	toolchain {
 		languageVersion = JavaLanguageVersion.of(21)
 	}
 }
 
+// lombokを使用するための設定
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
 }
 
+// リポジトリ設定
 repositories {
+
+	// mavenCentralを使用する設定
 	mavenCentral()
 }
 
