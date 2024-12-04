@@ -9,5 +9,4 @@ class SblibApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
