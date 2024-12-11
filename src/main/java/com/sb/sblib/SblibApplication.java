@@ -9,5 +9,4 @@ public class SblibApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SblibApplication.class, args);
 	}
-
 }
