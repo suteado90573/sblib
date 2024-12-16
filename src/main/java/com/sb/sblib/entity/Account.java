@@ -5,7 +5,7 @@ import org.joda.time.DateTime;
 import lombok.Data;
 
 /**
- * アカウントのマッパー
+ * アカウントのエンティティ
  */
 @Data
 public class Account {
