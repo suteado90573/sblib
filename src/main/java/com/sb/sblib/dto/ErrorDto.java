@@ -4,15 +4,15 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 /**
- * エラー発生時に返却されるDTO
+ * エラーDTO
  */
 @Data
-@Schema(description = "エラー発生時に返却されるDTO")
+@Schema(description = "エラーDTO")
 public class ErrorDto {
 
-	@Schema(description = "エラーコード", type = "integer", example = "100100100")
-	private Integer errCd;
+	@Schema(description = "項目ID", type = "string", example = "username")
+	private String itemId;
 
-	@Schema(description = "エラーメッセージ", type = "string", example = "エラーが発生しました。")
+	@Schema(description = "エラーメッセージ", type = "string", example = "ユーザ名を入力してください。")
 	private String errMsg;
 }
